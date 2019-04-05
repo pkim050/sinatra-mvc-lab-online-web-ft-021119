@@ -24,7 +24,7 @@ class PigLatinizer
       word[0] = ''
       word += first_letter
       while counter2 < counter
-        binding.pry
+        #binding.pry
         if ["a", "e", "i", "o", "u"].include?(word[0])
           break
         else
