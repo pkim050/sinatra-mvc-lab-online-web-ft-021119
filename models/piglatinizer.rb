@@ -5,14 +5,16 @@ class PigLatinizer
     @string = string
   end
 
-  def convert
-    a = @string.split(" ")
+  def convert_
+    temp = @string.split(" ")
     final = ""
-    b = a.map {|element| convert2(element)}
-    final = b.join(" ")
+    converted = temp.map {|element| convert2(element)}
+    final = converted.join(" ")
+    "#{final}"
   end
 
-  def convert2(word)
+  def convert_word
+    word = @string
     first_letter = word[0].downcase
     counter = word.size
     counter2 = 1
