@@ -28,4 +28,5 @@ class PigLatinizer
         counter2 += 1
       end
     end
+  end
 end
