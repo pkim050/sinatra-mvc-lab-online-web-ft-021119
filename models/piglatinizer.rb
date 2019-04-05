@@ -16,13 +16,14 @@ class PigLatinizer
   def piglatinize_word(string)
     word = string
     first_letter = word[0].downcase
+    actual_first = word[0]
     counter = word.size
     counter2 = 1
     if ["a", "e", "i", "o", "u"].include?(first_letter)
       "#{word}way"
     else
       word[0] = ''
-      word += first_letter
+      word += actual_first
       while counter2 < counter
         #binding.pry
         if ["a", "e", "i", "o", "u"].include?(word[0])
