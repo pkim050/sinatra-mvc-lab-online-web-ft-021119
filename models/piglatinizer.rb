@@ -24,11 +24,14 @@ class PigLatinizer
       word[0] = ''
       word += first_letter
       while counter2 < counter
-        break if ["a", "e", "i", "o", "u"].include?(word[counter2])
-        temp = word[counter2]
-        word[counter2] = ''
-        word += temp
-        counter2 += 1
+        if ["a", "e", "i", "o", "u"].include?(word[counter2])
+          break
+        else
+          temp = word[counter2]
+          word[counter2] = ''
+          word += temp
+          counter2 += 1
+        end
       end
       "#{word}ay"
     end
