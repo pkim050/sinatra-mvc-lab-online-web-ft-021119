@@ -14,7 +14,6 @@ class PigLatinizer
   end
 
   def piglatinize_word(string)
-    binding.pry
     word = string
     first_letter = word[0].downcase
     counter = word.size
