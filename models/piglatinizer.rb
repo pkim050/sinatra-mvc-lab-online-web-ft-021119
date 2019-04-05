@@ -22,7 +22,7 @@ class PigLatinizer
     if ["a", "e", "i", "o", "u"].include?(first_letter)
       "#{word}way"
     else
-      temp = pop()
+      temp = word.pop()
       word.push(temp)
       while counter2 < counter
         break if ["a", "e", "i", "o", "u"].include?(word[counter2])
