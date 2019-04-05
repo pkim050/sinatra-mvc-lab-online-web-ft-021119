@@ -27,6 +27,7 @@ class PigLatinizer
         word.push(temp)
         counter2 += 1
       end
+      "#{word}ay"
     end
   end
 end
